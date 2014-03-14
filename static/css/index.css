@@ -1,0 +1,441 @@
+html{
+	position: relative;
+	width: 100%;
+	margin:0px;
+	text-align: center;
+}
+
+body{
+	display: inline-block;
+	width: 960px;
+	margin:20px auto 0px;
+}
+
+div,body,html{
+	font-size: 0px;
+}
+
+p,a,span{
+    font-family: 'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+}
+
+.pictureShowDiv{
+	display: inline-block;
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+
+	background-color: rgba(0, 0, 0, 0.8);;
+	z-index: 100;
+}
+
+.header{
+	display: inline-block;
+	width: 960px;
+	height: 280px;
+	background-image: url(../img/headerImg.jpg);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	text-align: left;
+}
+
+.hdTitle1{
+	display: inline-block;
+	margin: 20px 200px 0px 20px;
+}
+.hdTitle1>span{
+	font-size: 32px;
+	color: #fff;
+	opacity: 0;
+
+	transition:opacity ;
+	transition-duration:1.2s;
+
+	-moz-transition:opacity ; 
+	-moz-transition-duration:1.2s;
+
+	-webkit-transition:opacity; 
+	-webkit-transition-duration:1.2s; 
+}
+
+.hdTitle2{
+	display: inline-block;
+	margin: 5px 200px 0px 24px;
+	width: 400px;
+	overflow: hidden;
+}
+
+.hdTitle2>span{
+	font-size: 22px;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+.hdTitle2>span:first-child{
+	font-size: 22px;
+	color: rgba(255, 255, 255, 0.88);
+	margin-left: -308px;
+
+	transition:margin-left ;
+	transition-duration:0.5s; 
+	transition-delay:0.3s;
+
+	-moz-transition:margin-left ; 
+	-moz-transition-duration:0.5s;
+	-moz-transition-delay:0.3s;
+
+	-webkit-transition:margin-left; 
+	-webkit-transition-duration:0.5s;
+	-webkit-transition-delay:0.3s;
+}
+
+.menu{
+	display: inline-block;
+	width: 100%;
+	height: 34px;
+	background-color:#116dae;
+	text-align: left;
+}
+
+.menu>div{
+	display: inline-block;
+	padding: 10px 15px; 
+	margin:0px 5px;
+	cursor: pointer;
+}
+
+.menu>div:hover{
+	background-color: #fff;
+}
+
+.menu>div:hover>a{
+	color:#116dae;
+}
+
+.menu a{
+	display: inline-block;
+	height: 14px;
+	font-size: 14px;
+
+	color:#fff;
+	text-decoration: none;
+}
+
+.menuHome{
+	background-color: #fff;
+	margin-left: 10px!important;
+}
+
+.menuHome>a{
+	color: #116dae;
+}
+
+.content{
+	position: relative;
+	width: 100%;
+	height: 640px;
+	margin: 7px 0px;
+	text-align: left;
+}
+
+.ctLeft{
+	display: inline-block;
+	width: 208px;
+	position: relative;
+}
+
+.ctBoxStyle{
+	display: inline-block;
+	width: 100%;
+	border:1px solid #CCC;
+}
+
+.contentMethod{
+	margin-top: 7px;
+}
+
+.ctLtitle{
+	color: #1b598d;
+	width: 200px;
+	margin: 0px;
+	padding-left: 8px;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: #dfe4e9;
+}
+
+.produceList>a{
+	display: inline-block;
+	width: 196px;
+	padding-left: 12px;
+
+	font-size: 12px; 
+	line-height: 23px;
+	border-top: 1px dotted #CCC;
+	color: #666;
+	text-decoration: none;
+}
+
+.produceList>a:hover{
+	background-color: #eee;
+}
+
+.produceList>a:nth-child(2){
+	margin-top: 5px;
+	border-top: 0px!important;
+}
+
+.contectDetail{
+	width: 196px;
+	padding-left: 12px;
+	margin: 0px 0px;
+
+	font-size: 12px; 
+	line-height: 23px;
+	color: #666;
+}
+
+.contectDetail:nth-child(2){
+	margin-top: 5px;
+}
+
+.ctRight{
+	display: inline-block;
+	width: 738px;
+
+	position: absolute;
+	right: 2px;
+}
+
+.showExample{
+	height: 225px;
+}
+
+.showExampleTitleDiv,.lastProduceTitle{
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	background-color: #dfe4e9;
+}
+
+.SETName,.LPName{
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left:12px;
+	color:#1b598d;	
+}
+
+.SETMore,.LPMore{
+	float: right;
+	margin-right: 12px;
+
+	font-size: 14px;
+	line-height: 24px;
+	margin-left:12px;
+	color:#1b598d;
+}
+
+.aboutCompany,.lastProduceDiv{
+	margin-top: 7px;
+}
+
+.aboutCompanyTitle{
+	width: 726px;
+	padding-left: 12px;
+	margin:0px;
+	line-height: 24px;
+
+	background-color: #dfe4e9;
+	font-size: 14px;
+	color:#1b598d;
+}
+
+.exampleListDiv{
+	display: inline-block;
+	height: 184px;
+	width: 718px;
+	padding: 10px 10px 7px; 
+}
+
+.exampleListDiv>div{
+	display: inline-block;
+	height: 184px;
+	width: 718px;
+	overflow: hidden;
+}
+
+.exampleList{
+	display: inline-block;
+	height: 184px;
+}
+
+.produceDiv{
+	float: left;
+	display: inline-block;
+	height: 100%;
+	width: 160px;
+	text-align: center;
+	margin:0px 11px;
+	text-decoration: none;
+}
+
+.produceDiv:first-child{
+	margin-left:0px;
+}
+
+.produceImgDiv{
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+
+	position: relative;
+	margin:0px auto;
+}
+
+.produceImg{
+	display: none;
+	position: absolute;
+	top: 0px;
+	bottom: 0px; 
+	left: 0px;
+	right: 0px;
+	margin:auto;
+}
+
+.produceName{
+	margin: 7px auto 5px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #666;
+}
+
+.aboutCompanyTextDiv>p{
+	margin: 0px 10px;
+	line-height: 22px;
+	font-size: 13px;
+	color: #666;
+}
+
+.aboutCompanyTextDiv{
+	padding: 6px 0px;
+}
+
+.lastProduceListDiv{
+	position: relative;
+	display: inline-block;;
+	width: 718px;
+	height: 186px;
+	padding: 10px 10px 7px;
+}
+
+.lastProduceListDiv:hover>.toLeft,.lastProduceListDiv:hover>.toRight{
+	display: inline-block;;
+}
+
+.toLeft,.toRight{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto 0px;
+
+	display: none;
+	width: 60px;
+	height: 60px;
+
+	background-color: rgba(2, 2, 2, 0.25);
+	text-align: center;
+	border-radius: 100px;
+	cursor: pointer;;
+}
+
+.toLeft>div,.toRight>div{
+	opacity: 0.4;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 20px;
+	height: 50px;
+	margin: 5px auto;
+}
+
+.toLeft{
+	left: 15px;
+}
+
+.toRight{
+	right: 15px;
+}
+
+.toLeft>div{
+	background-image: url(../img/toLeft.png);
+}
+
+.toRight>div{
+	background-image: url(../img/toRight.png);
+}
+
+.toLeft:hover>div,.toRight:hover>div{
+	opacity: 0.8;
+}
+
+.toLeft:hover,.toRight:hover{
+	background-color: rgba(2, 2, 2, 0.5);
+}
+
+.lastProduceList{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.lastProduceList>div{
+	position: absolute;
+	right: -100%;
+	text-align: center;
+	height: 186px;
+	width: 100%;
+}
+
+.lastProduceList>div:first-child{
+	right: 0px;
+}
+
+.footer{
+	width: 100%;
+	margin: 22px 0px 25px;
+	text-align: center;
+}
+
+.FTLine1{
+	width: 100%;
+}
+
+.FTLine1>a{
+	padding: 0px 5px;
+	line-height: 20px;
+	font-size: 13px;
+	border-left: 1px solid rgba(75, 75, 75, 0.89);
+	color: rgba(75, 75, 75, 0.89);
+	text-decoration: none;
+}
+.FTLine1>a:hover{
+	text-decoration: underline;
+}
+.FTLine1>a:first-child{
+	border-left: 0px rgba(75, 75, 75, 0.89);
+}
+
+.FTLine2{
+	width: 100%;
+}
+.FTLine2>p{
+	margin: 0px;
+	line-height: 20px;
+	font-size: 12px;
+	color: rgba(75, 75, 75, 0.89);
+}
