@@ -142,28 +142,28 @@
 			}
 			else{
 				//在产品展示列表后添加前四个产品
-				addHTML += "<a target='_blank' class='produceDiv' href='"
+				addHTML += "<a target='_blank' class='produceDiv'  href='"
 						+ produceList[0].url
 						+ "'><div class='produceImgDiv'><img src='../static/img/"
 						+ produceList[0].imgName
 						+ "' class='produceImg' onload='return changeImgSize(this)'/></div><p class='produceName'>"
 						+ produceList[0].produceName
 						+ "</p></a>"
-						+"<a target='_blank' class='produceDiv' href='"
+						+"<a target='_blank' class='produceDiv'  href='"
 						+ produceList[1].url
 						+ "'><div class='produceImgDiv'><img src='../static/img/"
 						+ produceList[1].imgName
 						+ "' class='produceImg' onload='return changeImgSize(this)'/></div><p class='produceName'>"
 						+ produceList[1].produceName
 						+ "</p></a>"
-						+"<a target='_blank' class='produceDiv' href='"
+						+"<a target='_blank' class='produceDiv'  href='"
 						+ produceList[2].url
 						+ "'><div class='produceImgDiv'><img src='../static/img/"
 						+ produceList[2].imgName
 						+ "' class='produceImg' onload='return changeImgSize(this)'/></div><p class='produceName'>"
 						+ produceList[2].produceName
 						+ "</p></a>"
-						+"<a target='_blank' class='produceDiv' href='"
+						+"<a target='_blank' class='produceDiv'  href='"
 						+ produceList[3].url
 						+ "'><div class='produceImgDiv'><img src='../static/img/"
 						+ produceList[3].imgName
@@ -178,7 +178,6 @@
 		},0);
 	};
 
-
 	function addLastExampleList(){
 		var i = 0;
 		var addHTML = "";
@@ -188,7 +187,7 @@
 				if(i%4 === 0){
 					addHTML += "<div>"
 				}
-				addHTML += "<a target='_blank' class='produceDiv' href='"
+				addHTML += "<a target='_blank' class='produceDiv'  href='"
 							+ lastProduceList[i].url
 							+ "''><div class='produceImgDiv'><img src='../static/img/"
 							+ lastProduceList[i].imgName
@@ -340,6 +339,7 @@
 	};
 
 	window.onload = function(){
+		headerShow();
 		addExampleList();
 		addLastExampleList();
 	};

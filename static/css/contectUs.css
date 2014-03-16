@@ -1,0 +1,28 @@
+.contectUsBoxTitle{
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	background-color: #dfe4e9;
+}
+
+.contectUsBoxTitle{
+	float: left;
+
+	font-size: 14px;
+	line-height: 24px;
+	color: #1b598d;
+}
+
+.contectUsShow{
+	display: inline-block;
+	width: 718px;
+	padding: 5px 10px 5px;
+}
+
+.contectUsShow>p{
+	margin: 0px;
+	font-size: 13px;
+	color: #494949;
+	line-height: 29px;
+}
+
